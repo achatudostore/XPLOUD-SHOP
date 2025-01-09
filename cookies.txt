@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+xploudshop.com	TRUE	/	FALSE	1999999999	woocommerce_recently_viewed	374380
+secure.gravatar.com	TRUE	/	FALSE	1999999999	__wpcc	c181d4828838247b3566ee786b2c590fe8dc9ef93b15e2d4a0cd7e8575987307%3A7e00eaff4d
+

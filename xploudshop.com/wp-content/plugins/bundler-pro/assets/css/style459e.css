@@ -1,0 +1,681 @@
+/**
+ * Common style for all layouts
+ * */
+
+.wbdl_widget {
+    width: 100%;
+}
+
+.wbdl_widget .offer-header {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break,
+.wbdl_widget .quantity-breaks__royal .quantity-break,
+.wbdl_widget .quantity-breaks__classic .quantity-break {
+    border: 1.7px solid #c6c6c6;
+    padding: 10px 10px 10px 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-weight: normal;
+    width: 100%;
+    max-width: 100% !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.wbdl_widget .quantity-break__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 40px;
+}
+
+.wbdl_widget .quantity-break__radio input[type=radio]:checked {
+    background: #565add;
+}
+
+.wbdl_widget .quantity-break__radio input[type=radio] {
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 transparent;
+    /* border: 1px solid #f4f4f4; */
+    background: #f4f4f4;
+    border-radius: 50%;
+    content: " ";
+    appearance: none;
+}
+
+.wbdl_widget .quantity-break__variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wbdl_widget .quantity-break__variants .quantity-break__variant-selector {
+    display: block;
+    align-items: center;
+    width: 100%;
+}
+
+.wbdl_widget .quantity-break__variants .quantity-break__variant-selector .quantity-break__attribute-label {
+    color: #1d1b1b;
+    font-size: 12px;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+    float: left;
+    font-weight: 700;
+    display: inline;
+    font-family: sans-serif;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.wbdl_widget .quantity-break__variants .quantity-break__attribute-option {
+    width: auto;
+}
+
+.wbdl_widget .quantity-break__variants select {
+    color: #000;
+    background-color: #fff;
+    font-family: Helvetica, Helvetica Neue, Arial, Lucida Grande, sans-serif;
+    font-style: normal;
+    padding: 0px 10px 0px 3px;
+    font-weight: 500;
+    border-radius: 3px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-right: 3px;
+    line-height: 23px;
+    position: static;
+    opacity: 1;
+    display: block;
+    background-position: right 3px center !important;
+    border-radius: 3px;
+    border: 1px solid;
+    font-size: 16px;
+    float: left;
+    height: auto !important;
+    cursor: pointer;
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 25px;
+}
+
+.wbdl_widget .img_thumbnail {
+    width: 20% !important;
+    padding-right: 12px !important;
+    display: block !important;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break__content {
+    width: 63%;
+}
+
+/**
+ * 1. Booster design css starts here
+ * */
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active {
+    background: #fafbff;
+    border: 2px solid #565add;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active input {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break .quantity-break__price {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: auto;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break__price .bundle-price {
+    text-align: right !important;
+    font-size: 17px;
+    background: transparent;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    align-items: center;
+    margin: 0px !important;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break__price .bundle-cprice {
+    font-style: normal;
+    font-weight: 400;
+    color: #afafaf !important;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    align-items: center;
+    margin: 0px !important;
+    background: transparent;
+    font-size: 16px !important;
+    text-decoration: line-through;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active .bundle-price,
+.wbdl_widget .quantity-breaks__booster .quantity-break.active .bundle-cprice {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break input:focus-visible {
+    outline: none;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wbdl_widget .quantity-breaks__booster span.quantity-break__variants {
+    padding-top: 5px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break span.quantity-break__discount-rule {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #565add;
+    padding: 3px 20px 3px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: -29px;
+    color: white;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break span.quantity-break__discount-rule bdi {
+    color: white;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active span.quantity-break__discount-rule {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #565add;
+    padding: 3px 20px 3px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: -29px;
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active span.quantity-break__discount-rule bdi {
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active .bundle-message-blink {
+    color: #565add;
+    font-weight: bold !important;
+    margin-bottom: 3px;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active p.bundle-message-blink,
+.wbdl_widget .quantity-breaks__booster .quantity-break p.bundle-message-blink {
+    animation: blinker 2s linear infinite;
+}
+
+.wbdl_widget .quantity-breaks__booster .quantity-break.active .bundle-message-not-blink,
+.wbdl_widget .quantity-breaks__booster .quantity-break.active .bundle-message-blink {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-break .bundle-message-not-blink,
+.wbdl_widget .quantity-break .bundle-message-blink {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 14px !important;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/**
+ * 2. Vertical design css starts here
+ * */
+
+.wbdl_widget .quantity-breaks__vertical {
+    display: grid;
+    column-gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break {
+    border: 1.5px solid #c6c6c6;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active {
+    border: 2px solid #565add;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break span.quantity-break__radio {
+    display: none;
+}
+
+.wbdl_widget .quantity-breaks__vertical span.quantity-break__content {
+    text-align: center;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .img_thumbnail {
+    width: 80% !important;
+    display: block !important;
+    margin: 0 auto;
+    padding: 0px !important;
+}
+
+.wbdl_widget .quantity-break .quantity-break__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .bundle-price {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    color: #565add;
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    font-size: 17px !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .bundle-cprice {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    color: #afafaf !important;
+    font-size: 16px !important;
+    text-decoration: line-through;
+    display: inline-block;
+    width: 100%;
+    text-decoration: line-through;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break div.quantity-break__price[columns="2"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break div.quantity-break__price[columns="2"] .bundle-price {
+    text-align: left !important;
+    padding-left: 2px;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break div.quantity-break__price[columns="2"] .bundle-cprice {
+    text-align: right !important;
+    padding-right: 2px;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break div.quantity-break__price[columns="1"] .bundle-price {
+    text-align: center !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active .bundle-price {
+    font-weight: bold !important;
+    font-style: normal;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active .bundle-cprice {
+    font-weight: bold !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break span.quantity-break__variants {
+    display: block !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break span.quantity-break__variants select {
+    float: none;
+    margin: 0px auto 10px auto;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .quantity-break__variant-selector {
+    display: block !important;
+    margin-bottom: 15px;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .quantity-break__attribute-label {
+    margin-bottom: 5px !important;
+    line-height: 15px !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .bundle-message-blink {
+    margin-bottom: 3px;
+    font-size: 14px !important;
+    animation: blinker 2s linear infinite;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active .bundle-message-blink {
+    color: #565add;
+    font-weight: bold !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break .bundle-message-not-blink {
+    margin-bottom: 3px;
+    font-size: 14px !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active .bundle-message-not-blink {
+    color: #565add;
+    font-weight: bold !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active .bundle-message-blink {
+    color: #565add;
+    font-weight: bold !important;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break.active span.quantity-break__discount-rule {
+    font-weight: 700 !important;
+    padding-bottom: 15px;
+}
+
+.wbdl_widget .quantity-breaks__vertical .quantity-break span.quantity-break__discount-rule {
+    font-weight: 600;
+    font-size: 13.5px;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/**
+ * Vertical design css ends here
+ * */
+
+
+/**
+ * Classic design starts here
+ * */
+
+.wbdl_widget .quantity-breaks__classic .quantity-break.active {
+    background: #fafbff;
+    border: 2px solid;
+}
+
+.wbdl_widget .quantity-breaks__classic .img_thumbnail {
+    width: 22% !important;
+    padding-right: 15px !important;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break .bundle-price {
+    border: none;
+    background: transparent;
+    /* width: 80px !important; */
+    font-style: normal;
+    font-weight: 400;
+    color: #565add;
+    font-size: 18px;
+    margin: 0;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break .bundle-cprice {
+    border: none;
+    background: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #afafaf !important;
+    text-decoration: line-through !important;
+    margin: 0;
+    padding-right: 6px;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break .quantity-break__price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break.active .bundle-price,
+.wbdl_widget .quantity-breaks__classic .quantity-break.active .bundle-cprice {
+    font-weight: 700 !important;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break div.quantity-break__content h5 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break .bundle-message-blink,
+.wbdl_widget .quantity-breaks__classic .quantity-break.active .bundle-message-blink {
+    animation: blinker 2s linear infinite;
+    margin-bottom: 0px !important;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break .bundle-message-not-blink,
+.wbdl_widget .quantity-breaks__classic .quantity-break .bundle-message-blink {
+    /* margin-bottom: 3px !important; */
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break.active .bundle-message-not-blink,
+.wbdl_widget .quantity-breaks__classic .quantity-break.active .bundle-message-blink {
+    color: #565add;
+    font-weight: bold !important;
+    margin-bottom: 0px !important;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break span.quantity-break__discount-rule {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-break.active span.quantity-break__discount-rule {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wbdl_widget .quantity-breaks__classic .quantity-breaks__classic .quantity-break.active span.quantity-break__discount-rule {
+    font-weight: 700 !important;
+}
+
+/* Royal design */
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active {
+    background: #fafbff;
+    border: 2px solid #565add;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active input {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break .quantity-break__price {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: auto;
+    /* min-width: 60px; */
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break__price .bundle-price {
+    text-align: right !important;
+    font-size: 17px;
+    background: transparent;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    align-items: center;
+    margin: 0px !important;
+    width: max-content;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break__price .bundle-cprice {
+    font-style: normal;
+    font-weight: 400;
+    color: #afafaf !important;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    align-items: center;
+    margin: 0px !important;
+    background: transparent;
+    font-size: 16px !important;
+    text-decoration: line-through;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active .bundle-price,
+.wbdl_widget .quantity-breaks__royal .quantity-break.active .bundle-cprice {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break input:focus-visible {
+    outline: none;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wbdl_widget .quantity-breaks__royal span.quantity-break__variants {
+    padding-top: 5px;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break span.quantity-break__discount-rule {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #565add;
+    padding: 3px 20px 3px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: -29px;
+    color: white;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break span.quantity-break__discount-rule bdi {
+    color: white;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active span.quantity-break__discount-rule {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #565add;
+    padding: 3px 20px 3px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: -29px;
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active span.quantity-break__discount-rule bdi {
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active .bundle-message-blink {
+    color: #565add;
+    font-weight: bold !important;
+    margin-bottom: 3px;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active p.bundle-message-blink,
+.wbdl_widget .quantity-breaks__royal .quantity-break p.bundle-message-blink {
+    animation: blinker 2s linear infinite;
+}
+
+.wbdl_widget .quantity-breaks__royal .quantity-break.active .bundle-message-not-blink,
+.wbdl_widget .quantity-breaks__royal .quantity-break.active .bundle-message-blink {
+    font-weight: bold;
+}
+
+.wbdl_widget .quantity-break .bundle-message-not-blink,
+.wbdl_widget .quantity-break .bundle-message-blink {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 14px !important;
+}
+
+/**
+ * Mobile style
+ * */
+@media(max-width: 768px) {
+
+    .wbdl_widget .quantity-breaks__classic .quantity-break div.quantity-break__content h5 {
+        margin-bottom: 0px;
+    }
+
+    .wbdl_widget .quantity-breaks__vertical .quantity-break {
+        /* width: 32% !important; */
+    }
+
+    .wbdl_widget .quantity-breaks__vertical .quantity-break .img_thumbnail {
+        width: 50% !important;
+    }
+}
+
+@media(max-width: 480px) {
+
+    /**
+     * Design two
+     * */
+    .quantity-breaks__vertical {
+        display: block !important;
+    }
+
+    .wbdl_widget .quantity-breaks__vertical .quantity-break {
+        width: 100%;
+    }
+}
+
+/* @media(max-width: 375px) {
+    div.quantity-break__content {}
+} */
+
+/* @media(max-width: 325px) {} */

@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 09 Jan 2025 04:40:55 at https://xploudshop.com/products/cortador-de-alimentos-5x1-multifuncional/?attribute_cor=Laranja&utm_source=Bing%20Shopping&utm_campaign=Bing%20Ads&utm_medium=cpc&utm_term=374383&msclkid=1fb157e62fe8121cac36309954e29065 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pt_BR, en, *" https://xploudshop.com/products/cortador-de-alimentos-5x1-multifuncional/?attribute_cor=Laranja&utm_source=Bing%20Shopping&utm_campaign=Bing%20Ads&utm_medium=cpc&utm_term=374383&msclkid=1fb157e62fe8121cac36309954e29065 -O1 "C:\Users\Paulo\Desktop\cortador de legumes\projeto" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+04:41:45	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://xploudshop.com/products/cortador-de-alimentos-5x1-multifuncional/?attribute_cor=Laranja&utm_source=Bing%20Shopping&utm_campaign=Bing%20Ads&utm_medium=cpc&utm_term=374383&msclkid=1fb157e62fe8121cac36309954e29065)
+04:41:45	Error: 	"Not Found" (404) at link https://img.cdncloud.top/uploader/5973d6034723ebd58b1c9cc66fccab7a.gif (from https://xploudshop.com/products/cortador-de-alimentos-5x1-multifuncional/?attribute_cor=Laranja&utm_source=Bing%20Shopping&utm_campaign=Bing%20Ads&utm_medium=cpc&utm_term=374383&msclkid=1fb157e62fe8121cac36309954e29065)
+04:41:45	Warning: 	Found for https://secure.gravatar.com/connect/?redirect_to=%2Fimages%2Fgrav-share-sprite.png
+04:41:45	Warning: 	File has moved from https://secure.gravatar.com/connect/?redirect_to=%2Fimages%2Fgrav-share-sprite.png to https://public-api.wordpress.com/oauth2/authorize?client_id=1854&response_type=code&blog_id=0&state=ddd73b7c9b29bd5767b9ec6a8b6343f39681c0ac35c02fadf5474eb569c40afd&redirect_uri=https%3A%2F%2Fgravatar.com%2Fconnect%2F%3Fredirect_to%3D%252Fimages%252Fgrav-share-sprite.png%26action%3Drequest_access_token
+
+HTTrack Website Copier/3.49-2 mirror complete in 50 seconds : 182 links scanned, 177 files written (5925075 bytes overall) [3722626 bytes received at 74452 bytes/sec], 3011554 bytes transferred using HTTP compression in 151 files, ratio 20%, 6.8 requests per connection
+(2 errors, 2 warnings, 0 messages)
