@@ -523,6 +523,156 @@ font-size:px !important;
 	padding:0px !important;margin:0px !important;
 }
 
+.fixed-buy-button {
+    position: fixed; /* O botão fica fixo na tela */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da parte direita */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.fixed-buy-button button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.fixed-buy-button button:hover {
+    transform: scale(1.1); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+
+/* Estilo para o botão */
+.sticky-buy-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sticky-buy-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Container do botão para espaçamento */
+.buy-now-container {
+    margin-top: 50px; /* Opcional */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .sticky-buy-button {
+        width: 90%; /* Tamanho mais compacto */
+        font-size: 14px;
+    }
+}
+
+/* Estilo do botão fixo para PC */
+.sticky-buy-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.sticky-buy-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .sticky-buy-button {
+        bottom: 10px;
+        right: 10px;
+        width: 90%;
+        left: 5%;
+        font-size: 14px;
+    }
+}
+
+/* Container principal */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Ajuste para desktop */
+@media (min-width: 1024px) {
+    .main-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+
+/* Botão de Comprar Responsivo */
+.sticky-buy-button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Alteração ao passar o mouse */
+.sticky-buy-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .sticky-buy-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
 </style><!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -1061,12 +1211,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<input type="button" value="+" class="plus" />
 			</div>
 	
-            <button 
-            type="button" 
-            class="single_add_to_cart_button button alt wp-element-button" 
-            onclick="window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';">
-            Comprar
-        </button>
+            <div style="text-align: center; margin-top: 20px;">
+                <button 
+                    type="button" 
+                    onclick="window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';" 
+                    style="padding: 15px 30px; background-color: #28a745; color: white; font-size: 18px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                    Comprar
+                </button>
+            </div>
+            
+            <div class="buy-now-container">
+                <button 
+                    type="button" 
+                    class="sticky-buy-button" 
+                    onclick="window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';">
+                    Comprar 
+                </button>
+            </div>
+            
+            
+
+
+        
         
 
 	
@@ -2243,7 +2409,9 @@ var woodmart_page_css = {"wd-widget-wd-recent-posts-css":"https:\/\/xploudshop.c
 		
 	}
 	
-}                                
+}
+
+
 /* ]]> */
 </script>
 <script type="text/javascript" src="../../wp-content/themes/woodmart/js/scripts/wc/woocommerceNotices.min1b46.js?ver=6.1.4" id="wd-woocommerce-notices-js"></script>
