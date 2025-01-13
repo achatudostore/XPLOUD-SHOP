@@ -1228,8 +1228,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div style="text-align: center; margin-top: 20px;">
                 <button 
                     type="button" 
-                    onclick="window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';" 
-                    style="padding: 15px 30px; background-color: #28a745; color: white; font-size: 18px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                    class="buy-button" 
+                    onclick="trackPurchaseEvent(); window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';">
                     Comprar
                 </button>
             </div>
@@ -1238,10 +1238,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <button 
                     type="button" 
                     class="sticky-buy-button" 
-                    onclick="window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';">
+                    onclick="trackPurchaseEvent(); window.location.href='https://pagamentosegury.online/checkout/cm5okzrja0bfaasy5eyqrc1xs?offer=7GUVJOA';">
                     Comprar 
                 </button>
             </div>
+            
+            <script>
+                // Função para rastrear o clique no botão com o Pixel do TikTok
+                function trackPurchaseEvent() {
+                    if (typeof ttq !== 'undefined') {
+                        ttq.track('CompletePayment', {
+                            content_type: 'product',
+                            content_name: 'Cortador CheffMax',
+                            content_category: 'Cortador Multifuncional',
+                            quantity: 1,
+                            price: 99.90, // Ajuste o valor para o preço do produto
+                            currency: 'BRL' // Moeda (Reais)
+                        });
+                    } else {
+                        console.error('TikTok Pixel não está definido.');
+                    }
+                }
+            </script>
             
             
 
